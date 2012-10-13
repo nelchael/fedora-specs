@@ -1,6 +1,6 @@
 Name:		vim-securemodelines
 Version:	20080424
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Secure, user-configurable modeline support
 
 License:	Vim
@@ -18,7 +18,7 @@ insecure options to be set. This script implements a much more heavily
 restricted modeline parser that permits only user-specified options to be set. 
 
 %prep
-:
+cp -p %SOURCE0 .
 
 %build
 :
@@ -31,5 +31,8 @@ cp securemodelines.vim %{buildroot}%{_datadir}/vim/vimfiles/plugin
 %{_datadir}/vim/vimfiles/plugin/*
 
 %changelog
+* Sat Oct 13 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20080424-2
+- Fix prep section
+
 * Wed Aug 29 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20080424-1
 - Initial version of package
