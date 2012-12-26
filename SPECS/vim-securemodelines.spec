@@ -11,11 +11,11 @@ Source0:	securemodelines.vim
 BuildArch:	noarch
 
 %description
-Secure, user-configurable modeline support for Vim 7. 
+Secure, user-configurable modeline support for Vim 7.
 
 Vim's internal modeline support allows all sorts of annoying and potentially
 insecure options to be set. This script implements a much more heavily
-restricted modeline parser that permits only user-specified options to be set. 
+restricted modeline parser that permits only user-specified options to be set.
 
 %prep
 cp -p %SOURCE0 .
