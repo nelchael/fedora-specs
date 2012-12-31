@@ -1,12 +1,11 @@
 Name:		vim-securemodelines
-Version:	20080424
-Release:	2%{?dist}
+Version:	20120929
+Release:	1%{?dist}
 Summary:	Secure, user-configurable modeline support
 
 License:	Vim
-URL:		http://www.vim.org/scripts/script.php?script_id=1876
-# Download form $URL
-Source0:	securemodelines.vim
+URL:		https://github.com/ciaranm/securemodelines
+Source0:	https://raw.github.com/ciaranm/securemodelines/master/plugin/securemodelines.vim
 
 BuildArch:	noarch
 
@@ -31,6 +30,9 @@ cp securemodelines.vim %{buildroot}%{_datadir}/vim/vimfiles/plugin
 %{_datadir}/vim/vimfiles/plugin/*
 
 %changelog
+* Mon Dec 31 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20120929-1
+- Version bump, fix URLs
+
 * Sat Oct 13 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20080424-2
 - Fix prep section
 
