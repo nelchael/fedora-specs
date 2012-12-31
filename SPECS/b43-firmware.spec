@@ -2,7 +2,7 @@ Name:		b43-firmware
 Version:	5.100.138
 Release:	2%{?dist}
 Summary:	Broadcom firmware for b43 LP PHY and >=linux-3.2
-License:	proprietary
+License:	Broadcom
 URL:		http://linuxwireless.org/en/users/Drivers/b43
 Source:		http://www.lwfinger.com/b43-firmware/broadcom-wl-%{version}.tar.bz2
 
