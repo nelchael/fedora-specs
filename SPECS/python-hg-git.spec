@@ -10,6 +10,7 @@ Source0:	https://bitbucket.org/durin42/hg-git/get/0.3.4.tar.bz2
 BuildArch:		noarch
 BuildRequires:	make
 BuildRequires:	git-daemon
+BuildRequires:	python-dulwich
 Requires:		python-dulwich
 Requires:		mercurial
 
