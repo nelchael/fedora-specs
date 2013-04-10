@@ -1,5 +1,5 @@
 Name:		vim-colorscheme-inkpot
-Version:	20121122
+Version:	20130410
 Release:	1%{?dist}
 Summary:	Vim color scheme: inkpot
 
@@ -26,6 +26,9 @@ install -m 644 *.vim %{buildroot}%{_datadir}/vim/vimfiles/colors
 %{_datadir}/vim/vimfiles/colors/
 
 %changelog
+* Wed Apr 10 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20130410-1
+- Version bump.
+
 * Mon Dec 31 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20121122-1
 - Split from vim-colorschemes package, small updates.
 
