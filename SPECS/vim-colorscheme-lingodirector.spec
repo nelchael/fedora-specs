@@ -1,6 +1,6 @@
 Name:		vim-colorscheme-lingodirector
 Version:	1.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Vim color scheme: lingodirector
 
 License:	Vim
@@ -20,12 +20,15 @@ cp -p %SOURCE0 .
 
 %install
 install -m 755 -d %{buildroot}%{_datadir}/vim/vimfiles/colors
-install -m 644 *.vim %{buildroot}%{_datadir}/vim/vimfiles/colors
+install -m 644 lingodirector.vim %{buildroot}%{_datadir}/vim/vimfiles/colors
 
 %files
 %{_datadir}/vim/vimfiles/colors/
 
 %changelog
+* Wed Apr 10 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.1-2
+- Use file name for install call.
+
 * Mon Dec 31 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.1-1
 - Split from vim-colorschemes package, small updates.
 

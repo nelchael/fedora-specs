@@ -1,6 +1,6 @@
 Name:		vim-colorscheme-inkpot
 Version:	20130410
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Vim color scheme: inkpot
 
 License:	Vim
@@ -20,12 +20,15 @@ cp -p %SOURCE0 .
 
 %install
 install -m 755 -d %{buildroot}%{_datadir}/vim/vimfiles/colors
-install -m 644 *.vim %{buildroot}%{_datadir}/vim/vimfiles/colors
+install -m 644 inkpot.vim %{buildroot}%{_datadir}/vim/vimfiles/colors
 
 %files
 %{_datadir}/vim/vimfiles/colors/
 
 %changelog
+* Wed Apr 10 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20130410-2
+- Use file name for install call.
+
 * Wed Apr 10 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20130410-1
 - Version bump.
 
