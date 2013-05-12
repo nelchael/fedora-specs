@@ -1,3 +1,4 @@
+%global commit 10d6c6b52fcdd12f3ba457126f66fee4ccceec04
 Name:		vim-securemodelines
 Version:	20120929
 Release:	1%{?dist}
@@ -5,7 +6,7 @@ Summary:	Secure, user-configurable modeline support
 
 License:	Vim
 URL:		https://github.com/ciaranm/securemodelines
-Source0:	https://raw.github.com/ciaranm/securemodelines/master/plugin/securemodelines.vim
+Source0:	https://raw.github.com/ciaranm/securemodelines/%{commit}/plugin/securemodelines.vim#/%{name}-%{version}-%{commit}.vim
 
 BuildArch:	noarch
 
@@ -17,7 +18,7 @@ insecure options to be set. This script implements a much more heavily
 restricted modeline parser that permits only user-specified options to be set.
 
 %prep
-cp -p %SOURCE0 .
+cp -p %SOURCE0 securemodelines.vim
 
 %build
 :
