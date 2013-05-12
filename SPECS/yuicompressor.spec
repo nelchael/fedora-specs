@@ -2,8 +2,8 @@ Name:		yuicompressor
 Version:	2.4.7
 Release:	1%{?dist}
 Summary:	Tool that supports the compression of both JavaScript and CSS files
-
 License:	BSD
+
 URL:		http://yuilibrary.com/projects/yuicompressor/
 Source0:	http://yui.zenfs.com/releases/yuicompressor/%{name}-%{version}.zip
 

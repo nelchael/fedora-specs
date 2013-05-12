@@ -3,8 +3,8 @@ Name:		vim-securemodelines
 Version:	20120929
 Release:	1%{?dist}
 Summary:	Secure, user-configurable modeline support
-
 License:	Vim
+
 URL:		https://github.com/ciaranm/securemodelines
 Source0:	https://raw.github.com/ciaranm/securemodelines/%{commit}/plugin/securemodelines.vim#/%{name}-%{version}-%{commit}.vim
 

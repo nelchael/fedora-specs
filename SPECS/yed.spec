@@ -2,8 +2,8 @@ Name:		yed
 Version:	3.10.2
 Release:	1%{?dist}
 Summary:	Application to quickly and effectively generate diagrams
-
 License:	yEd
+
 URL:		http://www.yworks.com/en/products_yed_about.html
 Source0:	http://www.yworks.com/products/yed/demo/yEd-%{version}.zip
 

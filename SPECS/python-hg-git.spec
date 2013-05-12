@@ -2,8 +2,8 @@ Name:		python-hg-git
 Version:	0.4.0
 Release:	1%{?dist}
 Summary:	Plugin for Hg, adding the ability to push and pull to/from Git
-
 License:	GPLv2
+
 URL:		http://hg-git.github.com
 Source0:	https://bitbucket.org/durin42/hg-git/get/%{version}.tar.bz2#/%{name}-%{version}.tar.bz2
 

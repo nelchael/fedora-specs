@@ -2,8 +2,8 @@ Name:		vim-colorscheme-lingodirector
 Version:	1.1
 Release:	2%{?dist}
 Summary:	Vim color scheme: lingodirector
-
 License:	Vim
+
 URL:		http://www.vim.org/scripts/script.php?script_id=4068
 Source0:	http://www.vim.org/scripts/download_script.php?src_id=17957#/%{name}-%{version}.vim
 

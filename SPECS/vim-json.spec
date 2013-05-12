@@ -3,8 +3,8 @@ Name:		vim-json
 Version:	0.12
 Release:	1.git20130512%{?dist}
 Summary:	Better JSON for VIM
-
 License:	MIT
+
 URL:		https://github.com/elzr/vim-json
 Source0:	https://github.com/elzr/vim-json/archive/%{commit}.zip#/%{name}-%{version}-%{commit}.zip
 

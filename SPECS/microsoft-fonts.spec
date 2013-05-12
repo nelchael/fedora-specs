@@ -3,6 +3,7 @@ Version:	20120826
 Release:	2%{?dist}
 Summary:	Set of Microsoft fonts (web-core fonts and Vista fonts)
 License:	proprietary
+
 Source0:	microsoft-fonts-20120826.tar.xz
 
 BuildArch:	noarch

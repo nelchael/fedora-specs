@@ -3,8 +3,8 @@ Name:		vim-colorscheme-inkpot
 Version:	20130410
 Release:	2%{?dist}
 Summary:	Vim color scheme: inkpot
-
 License:	Vim
+
 URL:		https://github.com/ciaranm/inkpot
 Source0:	https://raw.github.com/ciaranm/inkpot/%{commit}/colors/inkpot.vim#/%{name}-%{version}-%{commit}.vim
 
