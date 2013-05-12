@@ -1,3 +1,4 @@
+%global commit b86ad4dc977d3e92ca713c83bc225526a7d77070
 Name:		vim-colorscheme-inkpot
 Version:	20130410
 Release:	2%{?dist}
@@ -5,7 +6,7 @@ Summary:	Vim color scheme: inkpot
 
 License:	Vim
 URL:		https://github.com/ciaranm/inkpot
-Source:		https://raw.github.com/ciaranm/inkpot/master/colors/inkpot.vim
+Source0:	https://raw.github.com/ciaranm/inkpot/%{commit}/colors/inkpot.vim#/%{name}-%{version}-%{commit}.vim
 
 BuildArch:	noarch
 Conflicts:	vim-colorschemes
@@ -14,7 +15,7 @@ Conflicts:	vim-colorschemes
 Vim color scheme: inkpot.
 
 %prep
-cp -p %SOURCE0 .
+cp -p %SOURCE0 inkpot.vim
 
 %build
 
