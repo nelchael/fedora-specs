@@ -5,7 +5,7 @@ Summary:	Plugin for Hg, adding the ability to push and pull to/from Git
 
 License:	GPLv2
 URL:		http://hg-git.github.com
-Source0:	https://bitbucket.org/durin42/hg-git/get/0.4.0.tar.bz2
+Source0:	https://bitbucket.org/durin42/hg-git/get/%{version}.tar.bz2#/%{name}-%{version}.tar.bz2
 
 BuildArch:		noarch
 BuildRequires:	make
