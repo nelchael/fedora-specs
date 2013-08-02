@@ -4,4 +4,3 @@ BUILDROOT/*
 RPMS/*
 SOURCES/*
 SRPMS/*
-cleanup.sh
