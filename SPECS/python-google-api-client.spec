@@ -35,5 +35,5 @@ Moderator, and many other Google APIs.
 %{python_sitelib}/*
 
 %changelog
-* Thu Aug 15 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> - 1.2-1
+* Thu Aug 15 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.2-1
 - Initial version of package
