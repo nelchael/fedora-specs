@@ -1,6 +1,6 @@
 Name:		nelchael-release
 Version:	1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Nelchael Repository Configuration
 License:	BSD
 
@@ -85,6 +85,7 @@ name=nelchael
 baseurl=https://googledrive.com/host/0B27CFjB-gnGVSnRTQjBEYkIxX2M
 enabled=1
 gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nelchael
 REPO
 
 %files
@@ -95,5 +96,8 @@ REPO
 /usr/bin/rpmkeys --import %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-nelchael
 
 %changelog
+* Sun Aug 25 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-2
+- Add gpgkey location to repo file
+
 * Thu Aug 15 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-1
 - Initial version of package
