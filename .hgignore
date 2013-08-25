@@ -5,3 +5,4 @@ repodata
 RPMS/*
 SOURCES/*
 SRPMS/*
+sync-*
