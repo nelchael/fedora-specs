@@ -1,13 +1,12 @@
 Name:		pycharm-community
 Version:	3.0.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	The intelligent Python IDE with unique code assistance and analysis
 License:	ASL 2.0
 
 URL:		http://www.jetbrains.com/pycharm/
 Source0:	http://download-ln.jetbrains.com/python/%{name}-%{version}.tar.gz
 
-BuildArch:	noarch
 Requires:	java
 
 %define __jar_repack 0
@@ -32,7 +31,8 @@ Free Community Edition for pure Python coding and learning.
 
 %build
 sed -i -e 's,read I,#read I,g' bin/pycharm.sh
-:
+strip bin/fsnotifier*
+strip plugins/terminal/lib/linux/*/libpty.so
 
 %install
 mkdir -p %{buildroot}%{_libdir}/%{name}
@@ -76,36 +76,7 @@ desktop-file-install \
 
 %files
 %defattr(-, root, root, -)
-%doc license/ant_license.txt
-%doc license/asm_license.txt
-%doc license/growl.license
-%doc license/gson_license.txt
-%doc license/javahelp_license.html
-%doc license/jaxb_license.txt
-%doc license/jaxen_license.txt
-%doc license/jayatana_license.txt
-%doc license/jdom_license.txt
-%doc license/jgoodies_forms_license.txt
-%doc license/junit_license.txt
-%doc license/kryo-license.txt
-%doc license/LICENSE.txt
-%doc license/log4j_license.txt
-%doc license/microba_license.txt
-%doc license/miglayout_swing_license.txt
-%doc license/nanoxml_license.txt
-%doc license/NOTICE.txt
-%doc license/oromatcher_license.txt
-%doc license/picoContainer_license.txt
-%doc license/sanselan_license.txt
-%doc license/sqljet-license.txt
-%doc license/svnkit-license.txt
-%doc license/swingx_license.txt
-%doc license/winp_license.txt
-%doc license/xerces_license.txt
-%doc license/xmlrpc_license.txt
-%doc license/XStream_license.txt
-%doc license/yourkit-license-redist.txt
-%doc help/ReferenceCard.pdf
+%doc license help/ReferenceCard.pdf
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/pycharm.png
@@ -116,5 +87,8 @@ desktop-file-install \
 %{_libdir}/%{name}/plugins
 
 %changelog
+* Sat Nov 09 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.0.1-2
+- Changed to arch-dependant RPM, minor fixes
+
 * Tue Nov 05 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.0.1-1
 - Initial version of package
