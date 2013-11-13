@@ -1,6 +1,6 @@
 Name:		pycharm-community
 Version:	3.0.1
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	The intelligent Python IDE with unique code assistance and analysis
 License:	ASL 2.0
 
@@ -8,6 +8,7 @@ URL:		http://www.jetbrains.com/pycharm/
 Source0:	http://download-ln.jetbrains.com/python/%{name}-%{version}.tar.gz
 
 Requires:	java
+BuildArch:	noarch
 
 %define __jar_repack 0
 %global debug_package %{nil}
@@ -87,6 +88,9 @@ desktop-file-install \
 %{_libdir}/%{name}/plugins
 
 %changelog
+* Wed Nov 13 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.0.1-3
+- Changed to noarch
+
 * Sat Nov 09 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.0.1-2
 - Changed to arch-dependant RPM, minor fixes
 
