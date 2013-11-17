@@ -1,10 +1,10 @@
 Name:		nelchael-release
 Version:	1
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Nelchael Repository Configuration
 License:	BSD
 
-URL:		http://localhost
+URL:		https://bitbucket.org/nelchael/specs
 
 BuildArch:	noarch
 Requires:	system-release >= %{version}
@@ -96,6 +96,9 @@ REPO
 /usr/bin/rpmkeys --import %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-nelchael
 
 %changelog
+* Mon Nov 18 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-3
+- Change URL to Bitbucket
+
 * Sun Aug 25 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-2
 - Add gpgkey location to repo file
 
