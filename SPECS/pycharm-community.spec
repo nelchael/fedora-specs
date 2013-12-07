@@ -1,6 +1,6 @@
 Name:		pycharm-community
-Version:	3.0.1
-Release:	4%{?dist}
+Version:	3.0.2
+Release:	1%{?dist}
 Summary:	The intelligent Python IDE with unique code assistance and analysis
 License:	ASL 2.0
 
@@ -11,7 +11,7 @@ Requires:	java
 
 %define __jar_repack 0
 %global debug_package %{nil}
-%define _binaries_in_noarch_packages_terminate_build 0
+%global __python :
 
 %description
 The intelligent Python IDE with unique code assistance and analysis, for
@@ -87,6 +87,9 @@ desktop-file-install \
 %{_libdir}/%{name}/plugins
 
 %changelog
+* Sat Dec 07 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.0.2-1
+- Version bump
+
 * Tue Nov 26 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.0.1-4
 - Changed to arch-dependant RPM
 
