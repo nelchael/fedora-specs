@@ -1,5 +1,5 @@
 Name:		vim-python
-Version:	3.3.4
+Version:	3.3.6
 Release:	1%{?dist}
 Summary:	Enhanced version of the python syntax highlighting script
 License:	Vim
@@ -27,5 +27,8 @@ cp python.vim %{buildroot}%{_datadir}/vim/vimfiles/syntax
 %{_datadir}/vim/vimfiles/syntax/*
 
 %changelog
+* Sat Feb 01 2014 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.3.6-1
+- Version bump
+
 * Sat Aug 24 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.3.4-1
 - Initial version of package

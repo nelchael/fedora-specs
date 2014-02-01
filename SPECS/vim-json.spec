@@ -1,7 +1,7 @@
-%global commit 3b3fa6b65f1cbeeddd96abb6eb0b4ba971bf19e1
+%global commit 752e607ba78550de6ddace4f009ced4c5f7ae395
 Name:		vim-json
 Version:	0.12
-Release:	1.git20130512%{?dist}
+Release:	1.git20130828%{?dist}
 Summary:	Better JSON for VIM
 License:	MIT
 
@@ -33,5 +33,8 @@ done
 %{_datadir}/vim/vimfiles/syntax/*
 
 %changelog
+* Sat Feb 01 2014 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 0.12-1.git20130828
+- Version bump
+
 * Sun May 12 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 0.12-1.git20130512
 - Initial version of package
