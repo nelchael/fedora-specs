@@ -1,5 +1,5 @@
 Name:		SweetHome3D
-Version:	4.2
+Version:	4.3
 Release:	1%{?dist}
 Summary:	Free interior design application
 
@@ -74,5 +74,8 @@ desktop-file-install \
 %{_datadir}/pixmaps/%{name}Icon*x*.png
 
 %changelog
+* Sun Apr 27 2014 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 4.3-1
+- Version bump
+
 * Thu Nov 14 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 4.2-1
 - Initial version of package
