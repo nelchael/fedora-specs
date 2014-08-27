@@ -1,8 +1,0 @@
-syntax: glob
-BUILD/*
-BUILDROOT/*
-repodata
-RPMS/*
-SOURCES/*
-SRPMS/*
-sync-*
