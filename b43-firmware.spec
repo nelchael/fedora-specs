@@ -18,11 +18,11 @@ runs on the wireless chip itself to work properly. This firmware is copyrighted
 by Broadcom and must be extracted from Broadcom's proprietary drivers.
 
 %prep
-%setup -q -n broadcom-wl-%{version}
+%setup -c
 
 %build
 mkdir fw
-b43-fwcutter -w fw linux/wl_apsta.o
+b43-fwcutter -w fw broadcom-wl-%{version}.wl_apsta.o
 chmod 755 fw/b43
 chmod 644 fw/b43/*
 
@@ -31,7 +31,6 @@ mkdir -p %{buildroot}/lib/firmware/
 cp -r fw/b43 %{buildroot}/lib/firmware/
 
 %files
-%doc README
 /lib/firmware/b43
 
 %changelog
