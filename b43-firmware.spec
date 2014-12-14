@@ -1,6 +1,6 @@
 Name:		b43-firmware
-Version:	5.100.138
-Release:	2%{?dist}
+Version:	6.30.163.46
+Release:	1%{?dist}
 Summary:	Broadcom firmware for b43 LP PHY and >=linux-3.2
 License:	Broadcom
 
@@ -35,6 +35,9 @@ cp -r fw/b43 %{buildroot}/lib/firmware/
 /lib/firmware/b43
 
 %changelog
+* Sun Dec 14 2014 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 6.30.163.46-1
+- Version bump
+
 * Tue Aug 28 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 5.100.138-2
 - Fix directory and file permissions for installed firmware
 
