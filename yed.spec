@@ -1,5 +1,5 @@
 Name:		yed
-Version:	3.12.2
+Version:	3.14
 Release:	1%{?dist}
 Summary:	Application to quickly and effectively generate diagrams
 License:	yEd
@@ -31,7 +31,7 @@ mkdir -p %{buildroot}%{_datadir}/pixmaps
 mkdir -p %{buildroot}%{_bindir}
 
 cp yed.jar %{buildroot}%{_datadir}/%{name}/
-cp vectorgraphics.jar %{buildroot}%{_datadir}/%{name}/
+cp -R lib %{buildroot}%{_datadir}/%{name}/
 
 cp icons/yicon32.png %{buildroot}%{_datadir}/pixmaps/
 cp icons/yicon16.png %{buildroot}%{_datadir}/pixmaps/
@@ -40,7 +40,7 @@ cp icons/yicon16.png %{buildroot}%{_datadir}/pixmaps/
 cat >> %{buildroot}%{_bindir}/%{name} <<EOF
 #!/bin/bash
 
-java -jar %{_datadir}/%{name}/yed.jar \${@}
+java -jar "%{_datadir}/%{name}/yed.jar" \${@}
 EOF
 chmod 755 %{buildroot}%{_bindir}/%{name}
 
@@ -63,10 +63,14 @@ desktop-file-install \
 %doc license.html
 %{_bindir}/%{name}
 %{_datadir}/applications/yed.desktop
-%{_datadir}/%{name}/*.jar
+%{_datadir}/%{name}/yed.jar
+%{_datadir}/%{name}/lib/*.jar
 %{_datadir}/pixmaps/yicon??.png
 
 %changelog
+* Sat Dec 27 2014 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.14-1
+- Version bump
+
 * Sun Apr 27 2014 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.12.2-1
 - Version bump
 
