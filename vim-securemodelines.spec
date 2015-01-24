@@ -1,6 +1,6 @@
-%global commit 10d6c6b52fcdd12f3ba457126f66fee4ccceec04
+%global commit bfbecf050446814635f3e0809c4f5b60c04b192a
 Name:		vim-securemodelines
-Version:	20120929
+Version:	20150124
 Release:	1%{?dist}
 Summary:	Secure, user-configurable modeline support
 License:	Vim
@@ -31,6 +31,9 @@ cp securemodelines.vim %{buildroot}%{_datadir}/vim/vimfiles/plugin
 %{_datadir}/vim/vimfiles/plugin/*
 
 %changelog
+* Sat Jan 24 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20150124-1
+- Version bump
+
 * Mon Dec 31 2012 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20120929-1
 - Version bump, fix URLs
 
