@@ -1,6 +1,6 @@
 Name:		nelchael-release
 Version:	1
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	Nelchael Repository Configuration
 License:	BSD
 
@@ -23,7 +23,7 @@ public key).
 mkdir -p %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 cat > %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-nelchael <<GPG_KEY
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG v1.4.14 (GNU/Linux)
+Version: GnuPG v1
 
 mQENBEuxE7sBCACa+BrCd3hN+86W+QNomLrTbX3pMaLFKuRXxkL2DintLJrCCnXR
 BSpKpDFbAM8/UyAUprRoHINDNGKRL8Q9EKjaKGOEVI0b+qgirm2P/8oxp64Fi3iR
@@ -31,14 +31,14 @@ BSpKpDFbAM8/UyAUprRoHINDNGKRL8Q9EKjaKGOEVI0b+qgirm2P/8oxp64Fi3iR
 zwR/wBF7gZA6UWBPwYj6hEgaVngZhxU8JHP7hE1/HdgiPku1tcAMKnkdWfFOefNc
 ls0sDbGPUzhCJ8wL9gGhs8QyprT4jFHU9C73yQOu7sE2E7cAXyfsO4SjLryb1iCK
 gWC7fu+3xjEjjfqtXlFMnjY+GpMHbxnoUollABEBAAG0LEtyenlzenRvZiBQYXds
-aWsgPGtyenlzaWVrLnBhd2xpa0BwZW9wbGUucGw+iQFBBBMBAgArAhsDBQkJZgGA
-BgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAUCS7EVxwIZAQAKCRAWcr9a9qgORgiH
-B/9R+sLngoon9e5xTQIMvgJK9TLXiCLAigRf/f7nznKZwZbxiJdI+htRKQugOWVd
-ZRPbCcqibHDiiYmgLTqA9YYH1lOXietsls0/Z2P7acKTL/A33E/CnOZD93+gki/1
-ZuBorGLLxLQM0EM0U8QH1UwgVHCet9qVNIJK2pgP07remHq+HRFIT9sjkfypfyq9
-4RJ64LF3TGn2K7kg0orJtm8/pIQ/OMe+eHofnw9Snw2k8Oc3wrE+lfs67ixr6GjU
-d0R6vnSKEKLqnpHBs7ucO94bojVGUFW8ZSGp2i/m7T1kRyH1CDrBjlINN2i6F+Su
-2VVfN7lab/Q1l4EoCAeUP3zxiEYEEBECAAYFAkuyTBMACgkQxaxxlRl2+WrCwgCg
+aWsgPGtyenlzaWVrLnBhd2xpa0BwZW9wbGUucGw+iQFBBBMBAgArAhsDBgsJCAcD
+AgYVCAIJCgsEFgIDAQIeAQIXgAIZAQUCVR5qgwUJHDlZtwAKCRAWcr9a9qgORqxy
+B/4/hCcex5VRmMWhv4jyNdo+6WQmoRlHSdtSEB/i9cTWasaJdZwpAHjjTYgrYrTE
+z2+VE/WXZ2To2PTGcx1vPR6dD4ejTrhni6nPVEVGMPJPe8Ysg8PImziKRX65A5vv
+9GLzO5A7bOHF6Cmk1twCjofjRROuM1oWkD3IlSi+TojI9xqQuTBcYDLoMaWRbYCD
+zu7YH3JJd79JzOTelbdGDWrQONt1Ohxpm3q4C8gNxHZNMCACPY5V1aF1V5noD1kd
+RDoPhztKKqSulWbmAWQ9ZW4YGYE/hRAuiPJH4eJq0PHl8yfMNyEFby4tAzytGg39
+tBXLqCh7WV7c9+JcrG4kkahniEYEEBECAAYFAkuyTBMACgkQxaxxlRl2+WrCwgCg
 iFMB9tbSlF4zzBPbNrmomQI/FM8AnRDmQ2zXaiyhSbjTq6Xl3cZxVJ2MiQE+BBMB
 AgAoBQJLsRO7AhsDBQkJZgGABgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAAKCRAW
 cr9a9qgORj5uB/9J7gepf7L30kSxwJwHnRgly66W7QXDEY2f3MJBrQIQp6sB3dTO
@@ -67,14 +67,14 @@ v5zMP0bKKBRcJzW3yTgnXu0Q80voWdSs5y/e+KvJMIaE6426KHQWYWk6r7XS1ylt
 E33jLonuzX/9JquSQ8L3WZ2HVe107rV11IheR5cQkurr+SWaf44a+om/XmyK3vKG
 JAk9SWhXqubheS81J/aSmpy8bd11ErLkdgdMG7nFxjsCts0Gh7ySuwEGBk8wRb5i
 QiM+/Qj6BmQM/xBHBVcGtQIequ+jW+CZOiNtI9nX/duv15T7s2SrkqTkyMxMoC5e
-HqgMhVQDY8zTABEBAAGJASUEGAECAA8FAkuxE7sCGwwFCQlmAYAACgkQFnK/Wvao
-DkZrWQf+M4qmVub4wHiRIBT91oSCXXLJ34kil4L+aJtOv9jdJts0Cq9Dq1UmoeDM
-TGAJYsW1XKNPKN7uI2/4KlB+50Yw0DOFQip5eydvPlyL2dZQWK9G4PGb+uuZ+iZE
-b8kUDBdtwKHg8XKL8X2Xl8EvKwT/+i6Yoc0D9XysWD0BX5A11q4rsr0TfcGeglji
-552UNAizdE9BKo0LA5ceZTssoXbVS3Tqg/4GzmxUSLvWxFEHudlEnvVXhS+nnTZw
-jKe/7+b4VBCIskVWpvGKnu9+/rWPxsK99pW4xHWXqXBDmbBx00hYfhycb+t8lBUf
-iHVQpuDqAtYUR0U5e13TVzODOkqatA==
-=OY27
+HqgMhVQDY8zTABEBAAGJASUEGAECAA8CGwwFAlUeatEFCRw5WhQACgkQFnK/Wvao
+DkYrKAf9GYNSkf/Ye1keDYbKt4EL85Rarx2/dAYQQYBIjVtmfkU9D7YVRTxJT3Mv
+qAjvb8612SDHaX2G32b5c5pZ8SUJpZdl1dxbiDrWiuCI4tCNNdzr4ZbU5jGXBJhm
+zPgqg9SgPu8UHuL1sui8W2p/x1t6Hpnt7rBDT+fnEmnn87kdlRFmocPcsUqweAel
+rg/ygXWiwxdzw11EarcrGDVuIOwOepe0bQ87qbILTJJ8fYhBB1J2LijMm3qHwzv+
+K1ebKeEc2dgaIF8PcoUu6Z44ev3NgTbSNVcQDjb+H53QEG+HNeqLRPW5s+Hq3wNo
+Hf2GLsTnllH74f568X9FcIPsjvOShg==
+=RyNq
 -----END PGP PUBLIC KEY BLOCK-----
 GPG_KEY
 
@@ -96,6 +96,9 @@ REPO
 /usr/bin/rpmkeys --import %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-nelchael
 
 %changelog
+* Fri Apr 03 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-4
+- New GPG public key
+
 * Mon Nov 18 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-3
 - Change URL to Bitbucket
 
