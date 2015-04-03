@@ -1,5 +1,5 @@
 Name:		yed
-Version:	3.14
+Version:	3.14.1
 Release:	1%{?dist}
 Summary:	Application to quickly and effectively generate diagrams
 License:	yEd
@@ -68,6 +68,9 @@ desktop-file-install \
 %{_datadir}/pixmaps/yicon??.png
 
 %changelog
+* Fri Apr 03 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.14.1-1
+- Version bump
+
 * Sat Dec 27 2014 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 3.14-1
 - Version bump
 
