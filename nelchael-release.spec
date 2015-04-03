@@ -1,6 +1,6 @@
 Name:		nelchael-release
 Version:	1
-Release:	4%{?dist}
+Release:	5%{?dist}
 Summary:	Nelchael Repository Configuration
 License:	BSD
 
@@ -92,10 +92,10 @@ REPO
 %{_sysconfdir}/pki/rpm-gpg/*
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
-%post
-/usr/bin/rpmkeys --import %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-nelchael
-
 %changelog
+* Fri Apr 03 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-5
+- Fix GPG key installation
+
 * Fri Apr 03 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1-4
 - New GPG public key
 
