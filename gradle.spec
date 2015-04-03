@@ -10,6 +10,7 @@ Source0:	https://downloads.gradle.org/distributions/%{name}-%{version}-bin.zip
 BuildArch:		noarch
 BuildRequires:	unzip
 Requires:		java
+AutoReqProv:	no
 
 %define __jar_repack 0
 
