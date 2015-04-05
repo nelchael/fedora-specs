@@ -1,6 +1,6 @@
-%global commit 38751ede420cd7b177f54034ef265bd895d397b5
+%global commit b967eefb9b7c3103a2f8885eb736876f0a0cdaa9
 Name:		vim-lightline
-Version:	20150124
+Version:	20150405
 Release:	1%{?dist}
 Summary:	A light and configurable statusline/tabline
 License:	MIT
@@ -38,6 +38,9 @@ cp -R doc/lightline.txt %{buildroot}%{_datadir}/vim/vimfiles/doc
 %{_datadir}/vim/vimfiles/doc/lightline.txt
 
 %changelog
+* Sun Apr 05 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20150405-1
+- Version bump
+
 * Sat Jan 24 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 20150124-1
 - Version bump
 
