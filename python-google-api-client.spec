@@ -2,15 +2,17 @@
 
 Name:		python-google-api-client
 Version:	1.4.0
-Release:	1%{?dist}
+Release:	3%{?dist}
 Summary:	Google API Client Library for Python
 License:	ASL 2.0
 
 URL:		https://github.com/google/google-api-python-client
-Source0:	https://github.com/google/google-api-python-client/archive/v%{version}.tar.gz
+Source0:	https://github.com/google/google-api-python-client/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildArch:		noarch
 BuildRequires:	python-setuptools
+Requires:		python-oauth2client
+Requires:		python-uri-templates
 
 %description
 The Google API Client for Python is a client library for accessing the Plus,
@@ -35,6 +37,12 @@ sed -i -e 's,import os,return,' setup.py
 %{python_sitelib}/*
 
 %changelog
+* Sun Apr 05 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.4.0-3
+- Fix dependencies
+
+* Sun Apr 05 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.4.0-2
+- Fix dependencies
+
 * Sun Apr 05 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.4.0-1
 - Version bump, update URLs
 
