@@ -1,17 +1,16 @@
 %define upstream_name google-api-python-client
 
 Name:		python-google-api-client
-Version:	1.2
+Version:	1.4.0
 Release:	1%{?dist}
 Summary:	Google API Client Library for Python
 License:	ASL 2.0
 
-URL:		http://code.google.com/p/google-api-python-client/
-Source0:	https://pypi.python.org/packages/source/g/%{upstream_name}/%{upstream_name}-%{version}.tar.gz
+URL:		https://github.com/google/google-api-python-client
+Source0:	https://github.com/google/google-api-python-client/archive/v%{version}.tar.gz
 
 BuildArch:		noarch
 BuildRequires:	python-setuptools
-Requires:		python-httplib2
 
 %description
 The Google API Client for Python is a client library for accessing the Plus,
@@ -19,6 +18,7 @@ Moderator, and many other Google APIs.
 
 %prep
 %setup -q -n %{upstream_name}-%{version}
+sed -i -e 's,import os,return,' setup.py
 
 %build
 %{__python} setup.py build
@@ -31,9 +31,12 @@ Moderator, and many other Google APIs.
 #make tests
 
 %files
-%doc LICENSE CHANGELOG FAQ README
+%doc CHANGELOG LICENSE README.md docs/dyn docs/epy
 %{python_sitelib}/*
 
 %changelog
+* Sun Apr 05 2015 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.4.0-1
+- Version bump, update URLs
+
 * Thu Aug 15 2013 Krzysztof Pawlik <krzysiek.pawlik@people.pl> 1.2-1
 - Initial version of package
